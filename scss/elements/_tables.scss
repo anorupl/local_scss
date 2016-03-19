@@ -1,0 +1,80 @@
+table {
+    border-bottom: 1px solid $border-color;
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 0 20px;
+    width: 100%;
+
+}
+table caption, td   {
+    font-weight: normal;
+    text-align: left;
+    padding: 5px 10px;
+}
+table caption {
+    border-bottom: 1px dotted $border-color;
+    border-top: 1px dotted $border-color;
+    margin-bottom: 10px;
+}
+th {
+    background: $two-color;
+    color: $four-bw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 5px 10px;
+}
+td {
+    border-top: 0;
+    border-bottom: 1px solid $border-color;
+    border-left: 0;
+    border-right: 0;
+}
+td[scope=col] {
+    border-right: 1px solid $border-color;
+    width: 25%;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 25px;}
+tr:nth-child(odd) {
+    background: $four-bw;
+}
+tr:nth-child(even) {
+    background: $three-bw;
+}
+
+
+@media screen and (max-width: 600px) {
+  table caption { background-image: none; }
+  table thead { display: none; }
+
+
+  table td {
+     display: block;
+    @include font-size(1.1);
+  }
+
+    table tbody td::before {
+      content: attr(data-th);
+      float: left;
+      font-weight: bold;
+      width: 30%;
+  }
+    table tbody td::after {
+      content: '';
+      display:block;
+      clear: both;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  table tbody td {
+   word-break: break-all;
+
+  }
+}
+
+
+

@@ -1,0 +1,402 @@
+
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: auto
+}
+body,
+html {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: $four-bw;
+    font-family: $font-base;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: overflow .2s, -webkit-transform .6s;
+    transition: overflow .2s, transform .6s
+}
+body {
+    overflow: hidden;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.7em
+}
+
+
+/*----------------------------------
+ *  Gird 12 column
+ * ---------------------------------*/
+
+@include border-box-sizing;
+
+
+.col-1 		{@include span(1); @include sample(40, true);}
+.col-2 		{@include span(2); @include sample(40, true);}
+.col-3 		{@include span(3); @include sample(40, true);}
+.col-4 		{@include span(4); @include sample(40, true);}
+.col-5 		{@include span(5); @include sample(40, true);}
+.col-6 		{@include span(6); @include sample(40, true);}
+.col-7 		{@include span(7); @include sample(40, true);}
+.col-8 		{@include span(8); @include sample(40, true);}
+.col-9 		{@include span(9); @include sample(40, true);}
+.col-10 	{@include span(10); @include sample(40, true);}
+.col-11 	{@include span(11); @include sample(40, true);}
+
+.col-8-no-last 		{@include span(8 no-gutters last);  @include sample(40, true);}
+.col-4-no-last 		{@include span(4 no-gutters last);  @include sample(40, true);}
+
+.col-9-no 		{@include span(9 no-gutters);  @include sample(40, true);}
+
+
+.col-full 		{@include span(12);	@include sample(40, true);}
+.col-full-no 	{@include span(12 no-gutters);}
+
+
+.col-title 		{@include span(3);  @include sample(40, true);}
+.col-nav		{@include span(9);  @include sample(40, true);}
+
+
+
+/*----------------------------------
+ *  float
+ * ---------------------------------*/
+
+.rtl {
+	float: right;
+}
+/*----------------------------------
+ *  Header
+ * ---------------------------------*/
+#site-header {
+	h1 {margin: 0; padding: 0;}
+	
+	position: relative;
+	
+	&.over {
+		.title-area {
+			position: absolute;
+			top:0;
+			leftt:0;
+			width: span(3);	
+			@include gutters;
+			z-index: 200;
+			}
+	}
+
+}
+.home {
+	#site-header.over {
+		position: absolute;
+	}
+}
+.single {
+	#site-header {
+		min-height: 80px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		position: fixed;
+		top:0;
+		left: 0;
+		background: $four-bw;
+		z-index: 500;
+	}
+	main {
+		padding-top: 80px;
+	}
+}
+
+
+
+
+/*----------------------------------
+ * Two column
+ *---------------------------------- */
+.two-column {
+	.sidebar {
+		@include span(3);
+		@include sample(50px, true);
+	}
+	.content-area {
+		@include span(9);
+		@include sample(50px, true);
+		
+	}
+
+}
+
+/*----------------------------------
+ * Three column
+ *---------------------------------- */
+.three-column {
+	.sidebar {
+		@include span(2.5);
+		@include sample(50px, true);
+	}
+	.content-area {
+		@include span(9.5);
+		@include sample(50px, true);
+		}
+
+}
+/*----------------------------------
+ * Full width
+ *---------------------------------- */
+.content-area {
+} 
+
+
+
+
+
+
+/*----------------------------------
+ * hentry-left-icon
+ *---------------------------------- */
+.hentry-left-icon {
+	.hentry {
+		position: relative;
+		@include clearfix();
+		@include span(break);
+
+		margin-bottom: 25px;
+
+		.entry-header {
+			@include span(6 last);
+		}
+		.entry-content {
+			@include span(6 last);
+			clear: both;
+			figure {
+				@include span(6 no-gutters);
+				position: absolute;
+				top:0;
+				left:0;
+			}
+		}
+	}
+}
+/*----------------------------------
+ *  Breakpoint max-width 501px
+ * ---------------------------------*/
+@include breakpoint($small-min) {
+.hentry-left-icon {
+	.hentry {
+		.entry-header,.entry-content {
+			@include span(12 no-gutters);
+		}
+		.entry-content figure {
+				@include span(12 no-gutters);
+				position: relative;
+
+			}
+		}
+	}
+	
+}
+
+
+
+/*----------------------------------
+ * hentry-base
+ *---------------------------------- */
+.blog .hentry-base, .archive .hentry-base {
+
+	figure{
+		margin: 20px 0;
+	}
+	
+}
+
+
+.hentry-base {
+	.hentry {
+		position: relative;
+		background: $four-bw;
+		@include clearfix();
+		margin-bottom: 25px;
+
+		.entry-header {
+			padding: 0 2%;
+		}
+		.entry-content {
+    		padding: 0 10% 10%;
+		}
+		figure{
+			padding: 0 2%;
+			img { width: 100%;}
+		}
+		.entry-footer {
+			background-color: $three-bw;
+		    padding: 5% 10%;
+		}
+	}
+	.format-link .entry-title a:after {
+	   	content: "\f08e";
+   		@extend [class^="icon-"];
+
+	    font-size: 24px;
+	    height: 24px;
+	    position: relative;
+	    top: 0;
+    	left: 10px;
+	    width: 24px;
+	}
+}
+
+
+
+
+
+
+
+/*----------------------------------
+ *  Section header
+ * ---------------------------------*/
+.section-header {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        clear: both;
+
+		> h2 {border-bottom: double 4px $border-color; padding-bottom: 5px; }
+
+}
+/*----------------------------------
+ *  Section header - center
+ * ---------------------------------*/
+.header-center {
+	text-align: center;
+	position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+	p	{
+		color: scale-lightness($one-bw, 50%);
+	}
+
+	h2 {
+
+		display: inline-block;
+		padding: 20px 2%;
+		background: $four-bw;
+		margin: 0 auto;
+		z-index: 100;
+		position: relative;
+	}
+	.header-span {
+		position: relative;
+		display: block;
+	}
+	.border {
+		width: 80%;
+		background-color: scale-lightness($one-bw, 50%);
+		margin: 0 10%;
+ 		position: absolute;
+  		bottom: 50%;
+  		display: block;
+  		height: 1px;
+	}
+}
+
+
+
+
+
+
+
+/*----------------------------------
+ *  clear
+ * ---------------------------------*/
+.clear			{clear: both; width: 100%; height: 1px; display: block;}
+
+section::after {content: ""; clear: both; width: 100%; height: 1px; display: block;}
+
+
+
+
+
+
+
+/*----------------------------------
+ *  Breakpoint Section
+ * ---------------------------------*/
+/*----------------------------------
+ *  Breakpoint min-width 1224px
+ * ---------------------------------*/
+@include breakpoint($large) {
+	
+}
+
+
+/*----------------------------------
+ *  Breakpoint max-width 1223px 
+ * ---------------------------------*/
+@include breakpoint($medium) {
+	
+}
+/*----------------------------------
+ *  Breakpoint max-width 900px
+ * ---------------------------------*/
+@include breakpoint($small) {
+	.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,
+	.three-column .sidebar,
+	.three-column .content-area,
+	.two-column .sidebar,
+	.two-column .content-area,
+	.col-9-no,
+	.col-8-no-last,
+	.col-4-no-last {@include span(12 no-gutters); clear: both;}
+	
+	.hidde-small {
+		display: none;
+	}
+	
+.col-title 		{
+			width: span(8);	
+			padding-top: 2.08333%;
+			padding-bottom: 2.08333%;}
+.single {
+	#site-header {
+		padding-top: 0px;
+		padding-bottom: 10px;
+		position: relative;
+		top:0;
+		left: 0;
+		background: $three-bw;
+		z-index: 500;
+	}
+	main {
+		padding-top: 0px;
+	}
+}
+	
+	
+#site-header {
+	&.over {
+		background: $one-color;
+		.title-area {
+			width: span(8);	
+			padding-top: 2.08333%;
+			padding-bottom: 2.08333%;
+		}
+	}
+}
+.home {
+	#site-header.over {
+		position: relative;
+	}
+}
+
+
+}
+/*----------------------------------
+ *  Breakpoint max-width 501px
+ * ---------------------------------*/
+@include breakpoint($small-min) {
+	
+}
+
+
+

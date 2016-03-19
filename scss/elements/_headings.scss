@@ -1,0 +1,9 @@
+/* = Headings
+----------------------------------------------- */
+h1, h2, h3, h4, h5, h6		{color: $one-bw; padding: 0; margin: 0.5em 0; font-style: normal; font-variant: normal; font-weight: normal; font-family: $font-bold;}
+
+h1,.class-h1    { @include font-size(3.9);}
+h2,.class-h2    { @include font-size(3.2);}
+h3,.class-h3    { @include font-size(2.7);}
+h4,.class-h4    { @include font-size(2.2);}
+h5, h6          { @include font-size(1.9); letter-spacing: 0.1em; text-transform: uppercase;}

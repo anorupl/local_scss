@@ -1,0 +1,53 @@
+$vertical-font-size: 1.4;
+$vertical-font-size-lili: 1.4;
+
+$vertical-background: $four-bw;
+$vertical-background-lili: $four-bw;
+
+$vertical-color-a: $two-color;
+$vertical-color-ahover: $two-color;
+$vertical-border: $border-color;
+
+
+
+/*
+ * All
+ * */
+.vertical ul ul                           {margin-left: 0.8em;}
+
+.vertical .menu li                        {border-top: 1px solid #eaeaea; border-top: 1px solid rgba(51, 51, 51, 0.1); position: relative;}
+.vertical .menu li a                      {display: block; padding: 0.8em 0; position: relative; color: $vertical-color-a;}
+
+.vertical .menu > li                      { @include font-size($vertical-font-size); background: $vertical-background;       }
+.vertical .menu > li > li                 { @include font-size($vertical-font-size-lili); background: $vertical-background-lili;  }
+.vertical .menu > li > li > li            { @include font-size($vertical-font-size-lili); background: $vertical-background-lili;  }
+
+.vertical a:hover,
+.vertical .current_page_item > a,
+.vertical .current-menu-item > a,
+.vertical .current_page_ancestor > a        {color: $vertical-color-ahover;}
+
+.vertical .menu > ul > li:first-child,
+.vertical .menu > li:first-child            {border-top: 0;}
+
+.vertical .page_item_has_children > a,
+.vertical .menu-item-has-children > a       {padding-right: 48px; padding-left: 0.8em;}
+
+.vertical .menu-item-description            {@include font-size($size-small); font-weight: 400; margin-top: 0.5em;}
+
+/*
+ * DropDown .dropdown
+ */
+
+.vertical.dropdown ul .toggled-on           {display: block;}
+.vertical.dropdown ul ul                    {display: none;}
+.no-js .vertical.dropdown ul ul             {display: block;}
+
+.dropdown-toggle                            {font-family: 'icomoon'; background-color: transparent; border: 0; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; content: ""; height: 42px; padding: 0; position: absolute; text-transform: lowercase; top: 3px; right: 0; width: 42px;}
+.dropdown-toggle:after                      {color: $vertical-color-a; content: "\f107"; font-size: 24px; line-height: 42px; position: relative;	top: 0;	left: 1px; width: 42px;}
+.dropdown-toggle.toggle-on:after            {content: "\f106";}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus                      {background-color: $vertical-color-ahover; color: $vertical-background;}
+
+.dropdown-toggle:focus                      {outline: $outline ;}

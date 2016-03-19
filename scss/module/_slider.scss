@@ -1,0 +1,171 @@
+.full-slider {
+ 	height: 100%; 
+ 	margin-top: -1px;	
+ 
+	 .slides {
+	 	height: 100%; overflow: hidden; min-height: 675px;
+	 	
+	 > li {position: relative; height: 100%; min-height: 675px; max-height: 2000px; overflow: hidden;  background-repeat: no-repeat; background-position: center center; background-size: cover;}
+	 }
+}
+
+
+.auto-slider {
+
+	.slides {
+		min-height: inherit;
+		
+		li {
+			min-height: inherit;
+		}
+	}
+}
+
+
+
+
+.slider,
+.flex-control-nav,
+.flex-direction-nav 					{list-style: none; margin: 0; padding: 10px 0; }
+
+
+
+@include breakpoint($small) {
+
+	.full-slider {height: 100%; 	
+	 	 ul {min-height: 100px;
+		 	li {min-height: 100px;}
+		 }
+		}
+		
+}
+
+
+
+
+.flexslider 							{
+position: relative; 
+padding: 0;  
+zoom: 1; 
+z-index: 100;
+margin: 0; 
+overflow: hidden; 
+opacity: 1; 
+-webkit-transition: opacity 2s ease 2s; /* For Safari 3.1 to 6.0 */ 
+transition: opacity 2s ease 2s;	
+	.slides {
+		zoom: 1;
+		&:after {clear: both; content: "."; display: block; height: 0; line-height: 0; visibility: hidden;}
+	}
+	.slides > li 									{-webkit-backface-visibility: hidden; display: none;}
+	.no-js .slides > li:first-child, .flex-first	{display: block;}
+
+
+}
+
+
+
+
+/* hacki */
+html[xmlns] .slides 					{display: block;}
+* html .slides 							{height: 1%;}
+
+/* Nawigacja prev/next */
+.flex-direction-nav {
+  *height: 0;
+}
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  line-height: 3em;
+}
+.flex-direction-nav a:before {
+  font-family: 'icomoon';
+  font-size: 40px;
+  display: inline-block;
+  content: '\f053';
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+.flex-direction-nav a.flex-next:before {
+  content: '\f054';
+}
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right;
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+.flex-direction-nav .flex-disabled {
+  opacity: 0!important;
+  filter: alpha(opacity=0);
+  cursor: default;
+}
+
+/* Control Nav */
+.flex-control-nav {}
+
+.nav-absolute {
+	.flex-control-nav {
+		    position: absolute;
+   			bottom: 0;
+    		z-index: 200;
+    		right: 0;
+	}
+}
+
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 31px; height: 31px; display: block; background: #fff; cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
+.flex-control-paging li a:hover {
+    background: $one-color; 
+    background: -moz-linear-gradient(-45deg,  $one-color 0%, $two-color 99%); 
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$one-color), color-stop(99%,$two-color)); 
+    background: -webkit-linear-gradient(-45deg,  $one-color 0%,$two-color 99%); 
+    background: -o-linear-gradient(-45deg,  $one-color 0%,$two-color 99%); 
+    background: -ms-linear-gradient(-45deg,  $one-color 0%,$two-color 99%); 
+    background: linear-gradient(135deg,  $one-color 0%,$two-color 99%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$one-color', endColorstr='$two-color',GradientType=1 );}
+.flex-control-paging li a.flex-active {
+    cursor: default; 
+    background: $two-color; 
+    background: -moz-linear-gradient(45deg,  $two-color 0%, $one-color 100%); 
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,$two-color), color-stop(100%,$one-color)); 
+    background: -webkit-linear-gradient(45deg,  $two-color 0%,$one-color 100%); 
+    background: -o-linear-gradient(45deg,  $two-color 0%,$one-color 100%); 
+    background: -ms-linear-gradient(45deg,  $two-color 0%,$one-color 100%); 
+    background: linear-gradient(45deg,  $two-color 0%,$one-color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$two-color', endColorstr='$one-color',GradientType=1 );}
+
+
+

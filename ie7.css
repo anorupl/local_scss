@@ -1,0 +1,684 @@
+@charset "UTF-8";
+/*
+Theme Name: Gmina 2.0
+Theme URI: http://kamilzerebny.pl
+Description: brak
+Version: 2.0.0
+Author: Kamil ┼╗erebny
+Author http://kamilzerebny.pl
+License: Wszelkie prawa zastrze┼╝one Kamil ┼╗erebny
+License URI: License.txt
+Tags: responsive-layout, custom-menu, featured-images, post-formats, sticky-post, translation-ready
+Text Domain: wpg_theme
+*/
+/* --------------------------------------------
+ * Color
+ --------------------------------------------*/
+/* --------------------------------------------
+ * Path
+ --------------------------------------------*/
+/* --------------------------------------------
+ * font
+ --------------------------------------------*/
+/* --------------------------------------------
+ * Breakpoint (continer max-width 1300px)
+ --------------------------------------------*/
+/* --------------------------------------------
+ * Color
+ --------------------------------------------*/
+/* --------------------------------------------
+ * Path
+ --------------------------------------------*/
+/* --------------------------------------------
+ * font
+ --------------------------------------------*/
+/* --------------------------------------------
+ * Breakpoint (continer max-width 1300px)
+ --------------------------------------------*/
+/* module all */
+/* line 1, scss/ie/_ie7.scss */
+.icon-chevron-with-circle-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe601;');
+}
+
+/* line 4, scss/ie/_ie7.scss */
+.icon-chevron-with-circle-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe602;');
+}
+
+/* line 7, scss/ie/_ie7.scss */
+.icon-chevron-with-circle-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe603;');
+}
+
+/* line 10, scss/ie/_ie7.scss */
+.icon-chevron-with-circle-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe604;');
+}
+
+/* line 13, scss/ie/_ie7.scss */
+.icon-info {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe600;');
+}
+
+/* line 16, scss/ie/_ie7.scss */
+.icon-search {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf002;');
+}
+
+/* line 19, scss/ie/_ie7.scss */
+.icon-envelope-o {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf003;');
+}
+
+/* line 22, scss/ie/_ie7.scss */
+.icon-heart {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf004;');
+}
+
+/* line 25, scss/ie/_ie7.scss */
+.icon-star2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf005;');
+}
+
+/* line 28, scss/ie/_ie7.scss */
+.icon-star-o {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf006;');
+}
+
+/* line 31, scss/ie/_ie7.scss */
+.icon-user {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf007;');
+}
+
+/* line 34, scss/ie/_ie7.scss */
+.icon-check {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00c;');
+}
+
+/* line 37, scss/ie/_ie7.scss */
+.icon-close {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00d;');
+}
+
+/* line 40, scss/ie/_ie7.scss */
+.icon-search-plus {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00e;');
+}
+
+/* line 43, scss/ie/_ie7.scss */
+.icon-search-minus {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf010;');
+}
+
+/* line 46, scss/ie/_ie7.scss */
+.icon-cog {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf013;');
+}
+
+/* line 49, scss/ie/_ie7.scss */
+.icon-trash-o {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf014;');
+}
+
+/* line 52, scss/ie/_ie7.scss */
+.icon-home {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf015;');
+}
+
+/* line 55, scss/ie/_ie7.scss */
+.icon-file-o {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf016;');
+}
+
+/* line 58, scss/ie/_ie7.scss */
+.icon-bookmark {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02e;');
+}
+
+/* line 61, scss/ie/_ie7.scss */
+.icon-align-justify {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf039;');
+}
+
+/* line 64, scss/ie/_ie7.scss */
+.icon-map-marker {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf041;');
+}
+
+/* line 67, scss/ie/_ie7.scss */
+.icon-chevron-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf053;');
+}
+
+/* line 70, scss/ie/_ie7.scss */
+.icon-chevron-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf054;');
+}
+
+/* line 73, scss/ie/_ie7.scss */
+.icon-question-circle {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf059;');
+}
+
+/* line 76, scss/ie/_ie7.scss */
+.icon-calendar {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf073;');
+}
+
+/* line 79, scss/ie/_ie7.scss */
+.icon-chevron-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf077;');
+}
+
+/* line 82, scss/ie/_ie7.scss */
+.icon-chevron-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf078;');
+}
+
+/* line 85, scss/ie/_ie7.scss */
+.icon-external-link {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf08e;');
+}
+
+/* line 88, scss/ie/_ie7.scss */
+.icon-bookmark-o {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf097;');
+}
+
+/* line 91, scss/ie/_ie7.scss */
+.icon-phone-square {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf098;');
+}
+
+/* line 94, scss/ie/_ie7.scss */
+.icon-chain {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c1;');
+}
+
+/* line 97, scss/ie/_ie7.scss */
+.icon-paperclip {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c6;');
+}
+
+/* line 100, scss/ie/_ie7.scss */
+.icon-envelope {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e0;');
+}
+
+/* line 103, scss/ie/_ie7.scss */
+.icon-file-text-o {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0f6;');
+}
+
+/* line 106, scss/ie/_ie7.scss */
+.icon-angle-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf104;');
+}
+
+/* line 109, scss/ie/_ie7.scss */
+.icon-angle-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf105;');
+}
+
+/* line 112, scss/ie/_ie7.scss */
+.icon-angle-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf106;');
+}
+
+/* line 115, scss/ie/_ie7.scss */
+.icon-angle-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf107;');
+}
+
+/* line 118, scss/ie/_ie7.scss */
+.icon-desktop {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf108;');
+}
+
+/* line 121, scss/ie/_ie7.scss */
+.icon-laptop {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf109;');
+}
+
+/* line 124, scss/ie/_ie7.scss */
+.icon-tablet {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf10a;');
+}
+
+/* line 127, scss/ie/_ie7.scss */
+.icon-mobile {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf10b;');
+}
+
+/* line 130, scss/ie/_ie7.scss */
+.icon-file {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf15b;');
+}
+
+/* line 133, scss/ie/_ie7.scss */
+.icon-file-text {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf15c;');
+}
+
+/* line 136, scss/ie/_ie7.scss */
+.icon-female {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf182;');
+}
+
+/* line 139, scss/ie/_ie7.scss */
+.icon-male {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf183;');
+}
+
+/* line 142, scss/ie/_ie7.scss */
+.icon-file-pdf-o {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1c1;');
+}
+
+/* line 145, scss/ie/_ie7.scss */
+.icon-file-word-o {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1c2;');
+}
+
+/* line 148, scss/ie/_ie7.scss */
+.icon-file-excel-o {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1c3;');
+}
+
+/* line 151, scss/ie/_ie7.scss */
+.icon-file-powerpoint-o {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1c4;');
+}
+
+/* line 154, scss/ie/_ie7.scss */
+.icon-file-image-o {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1c5;');
+}
+
+/* line 157, scss/ie/_ie7.scss */
+.icon-file-archive-o {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1c6;');
+}
+
+/* line 160, scss/ie/_ie7.scss */
+.icon-file-audio-o {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1c7;');
+}
+
+/* line 163, scss/ie/_ie7.scss */
+.icon-file-movie-o {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1c8;');
+}
+
+/* line 166, scss/ie/_ie7.scss */
+.icon-file-code-o {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1c9;');
+}
+
+/* line 169, scss/ie/_ie7.scss */
+.icon-phone-android {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe7d2;');
+}
+
+/* line 172, scss/ie/_ie7.scss */
+.icon-tablet-mac {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe7dc;');
+}
+
+/* line 175, scss/ie/_ie7.scss */
+.icon-tv {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe7dd;');
+}
+
+/* line 178, scss/ie/_ie7.scss */
+.icon-camera-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe7f0;');
+}
+
+/* line 181, scss/ie/_ie7.scss */
+.icon-collections {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe7f6;');
+}
+
+/* line 184, scss/ie/_ie7.scss */
+.icon-exposure {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80a;');
+}
+
+/* line 187, scss/ie/_ie7.scss */
+.icon-photo-library {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe84e;');
+}
+
+/* line 190, scss/ie/_ie7.scss */
+.icon-remove-red-eye {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe850;');
+}
+
+/* line 193, scss/ie/_ie7.scss */
+.icon-star {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8f2;');
+}
+
+/* line 196, scss/ie/_ie7.scss */
+.icon-star-outline {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8f4;');
+}
+
+/* line 199, scss/ie/_ie7.scss */
+.icon-folder2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe92f;');
+}
+
+/* line 202, scss/ie/_ie7.scss */
+.icon-folder-open2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe930;');
+}
+
+/* line 205, scss/ie/_ie7.scss */
+.icon-price-tag {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe935;');
+}
+
+/* line 208, scss/ie/_ie7.scss */
+.icon-price-tags {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe936;');
+}
+
+/* line 211, scss/ie/_ie7.scss */
+.icon-location2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe948;');
+}
+
+/* line 214, scss/ie/_ie7.scss */
+.icon-clock {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe94e;');
+}
+
+/* line 217, scss/ie/_ie7.scss */
+.icon-clock2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe94f;');
+}
+
+/* line 220, scss/ie/_ie7.scss */
+.icon-box-add {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe95e;');
+}
+
+/* line 223, scss/ie/_ie7.scss */
+.icon-bubbles {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe96c;');
+}
+
+/* line 226, scss/ie/_ie7.scss */
+.icon-bubbles2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe96d;');
+}
+
+/* line 229, scss/ie/_ie7.scss */
+.icon-bubble2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe96e;');
+}
+
+/* line 232, scss/ie/_ie7.scss */
+.icon-bubbles3 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe96f;');
+}
+
+/* line 235, scss/ie/_ie7.scss */
+.icon-bubbles4 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe970;');
+}
+
+/* line 238, scss/ie/_ie7.scss */
+.icon-user2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe971;');
+}
+
+/* line 241, scss/ie/_ie7.scss */
+.icon-users {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe972;');
+}
+
+/* line 244, scss/ie/_ie7.scss */
+.icon-quotes-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe977;');
+}
+
+/* line 247, scss/ie/_ie7.scss */
+.icon-quotes-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe978;');
+}
+
+/* line 250, scss/ie/_ie7.scss */
+.icon-lock2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe98f;');
+}
+
+/* line 253, scss/ie/_ie7.scss */
+.icon-unlocked {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe990;');
+}
+
+/* line 256, scss/ie/_ie7.scss */
+.icon-bookmark2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe9d2;');
+}
+
+/* line 259, scss/ie/_ie7.scss */
+.icon-bookmarks {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe9d3;');
+}
+
+/* line 262, scss/ie/_ie7.scss */
+.icon-blocked {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea0e;');
+}
+
+/* line 265, scss/ie/_ie7.scss */
+.icon-cross {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea0f;');
+}
+
+/* line 268, scss/ie/_ie7.scss */
+.icon-checkmark {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea10;');
+}
+
+/* line 271, scss/ie/_ie7.scss */
+.icon-checkbox-checked {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea52;');
+}
+
+/* line 274, scss/ie/_ie7.scss */
+.icon-checkbox-unchecked {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea53;');
+}
+
+/* line 277, scss/ie/_ie7.scss */
+.icon-radio-checked {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea54;');
+}
+
+/* line 280, scss/ie/_ie7.scss */
+.icon-radio-checked2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea55;');
+}
+
+/* line 283, scss/ie/_ie7.scss */
+.icon-google-plus {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea88;');
+}
+
+/* line 286, scss/ie/_ie7.scss */
+.icon-google-plus2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea89;');
+}
+
+/* line 289, scss/ie/_ie7.scss */
+.icon-google-plus3 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea8a;');
+}
+
+/* line 292, scss/ie/_ie7.scss */
+.icon-facebook {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea8c;');
+}
+
+/* line 295, scss/ie/_ie7.scss */
+.icon-facebook2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea8d;');
+}
+
+/* line 298, scss/ie/_ie7.scss */
+.icon-facebook3 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea8e;');
+}
+
+/* line 301, scss/ie/_ie7.scss */
+.icon-twitter {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea91;');
+}
+
+/* line 304, scss/ie/_ie7.scss */
+.icon-twitter2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea92;');
+}
+
+/* line 307, scss/ie/_ie7.scss */
+.icon-twitter3 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea93;');
+}
+
+/* line 310, scss/ie/_ie7.scss */
+.icon-feed2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea94;');
+}
+
+/* line 313, scss/ie/_ie7.scss */
+.icon-feed3 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea95;');
+}
+
+/* line 316, scss/ie/_ie7.scss */
+.icon-feed4 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea96;');
+}
+
+/* line 319, scss/ie/_ie7.scss */
+.icon-youtube {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea97;');
+}
+
+/* line 322, scss/ie/_ie7.scss */
+.icon-youtube2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea98;');
+}
+
+/* line 325, scss/ie/_ie7.scss */
+.icon-youtube3 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea99;');
+}
+
+/* line 328, scss/ie/_ie7.scss */
+.icon-vimeo {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea9c;');
+}
+
+/* line 331, scss/ie/_ie7.scss */
+.icon-vimeo2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea9d;');
+}
+
+/* line 334, scss/ie/_ie7.scss */
+.icon-vimeo3 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea9e;');
+}
+
+/* line 337, scss/ie/_ie7.scss */
+.icon-flickr2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeaa1;');
+}
+
+/* line 340, scss/ie/_ie7.scss */
+.icon-flickr3 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeaa2;');
+}
+
+/* line 343, scss/ie/_ie7.scss */
+.icon-flickr4 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeaa3;');
+}
+
+/* line 346, scss/ie/_ie7.scss */
+.icon-picassa {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeaa4;');
+}
+
+/* line 349, scss/ie/_ie7.scss */
+.icon-picassa2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeaa5;');
+}
+
+/* line 352, scss/ie/_ie7.scss */
+.icon-deviantart {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeaab;');
+}
+
+/* line 355, scss/ie/_ie7.scss */
+.icon-deviantart2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeaac;');
+}
+
+/* line 358, scss/ie/_ie7.scss */
+.icon-github4 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeab4;');
+}
+
+/* line 361, scss/ie/_ie7.scss */
+.icon-github5 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeab5;');
+}
+
+/* line 364, scss/ie/_ie7.scss */
+.icon-wordpress {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeab6;');
+}
+
+/* line 367, scss/ie/_ie7.scss */
+.icon-wordpress2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeab7;');
+}
+
+/* line 370, scss/ie/_ie7.scss */
+.icon-skype {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeac6;');
+}
+
+/* line 373, scss/ie/_ie7.scss */
+.icon-linkedin {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeac8;');
+}
+
+/* line 376, scss/ie/_ie7.scss */
+.icon-linkedin2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeac9;');
+}
+
+/* line 379, scss/ie/_ie7.scss */
+.icon-pinterest {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xead0;');
+}
+
+/* line 382, scss/ie/_ie7.scss */
+.icon-pinterest2 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xead1;');
+}
+
+/* line 386, scss/ie/_ie7.scss */
+.gallery-item {
+  min-height: 250px;
+  zoom: 1;
+  display: inline;
+}

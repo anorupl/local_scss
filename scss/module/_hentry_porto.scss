@@ -1,0 +1,301 @@
+.hentry-porto {
+        background-color: $three-bw;
+        
+        
+
+        article {
+            @include span(12 clearfix);
+   
+           
+            position: relative;
+            padding-top: 1.08333%;
+            padding-bottom: 4.08333%;
+            
+     }
+        figure img {
+            width: 100%;
+            height: auto;
+            display: block;
+     }
+        .warp-absolute {
+        	@include span(4 rtl );
+            position: absolute;
+            right: 2.08333%;
+            
+            background-color: #fff;
+            overflow: hidden;
+            padding-top: 20px;
+            padding-bottom: 20px;
+     	}
+      
+      
+      .format-standard, .format-quote {
+     		.warp-absolute {
+        		top: 7%;
+            	height: auto;
+	    	}     	
+   	     	.entry-content {
+	     		padding: 10% 14% 2% 10%;
+	     		min-height: 365px;
+	     	}  	
+     }
+     .format-quote {
+     	.entry-content p:before {
+     		content: "\e977";
+     		@extend [class^="icon-"];
+	   		 font-size: 64px;
+    		padding: 5% 5% 5% 0;
+    		display: block;
+    		float: left;
+     		
+     		
+     	}
+     	
+     }
+     
+     
+   	.format-standard.has-post-thumbnail {
+     		.warp-absolute {
+  		      	top: 7%;
+        	    height: 80%;
+           		@include span(4 rtl );
+           	}
+			.entry-content {
+	     		padding: 0 0 0 0;
+	     		min-height: none;
+	     	}
+     }
+     	
+     .format-image {
+        .warp-absolute {
+        	top: 7%;
+            height: 80%;
+     	}
+     }
+     .format-gallery {
+     	.warp-absolute {
+     		top: 4%;
+     	     height: 43%;
+     	    }
+     }
+     .format-video {
+        .warp-absolute {
+        	top: 7%;
+            height: auto;
+     	}
+     }
+     
+     .entry-content {
+		@include font-size($size-medium);
+     }
+     .entry-meta {
+     	@include font-size($size-small);
+     	padding: 0 0 10px 0;
+     	color: $two-bw;
+     }
+     .fluid-width-video-wrapper {
+     	width: 100%;
+    	position: relative;
+    	padding: 0;
+    	padding-top: 54.1667%;
+     }
+     
+     .text-big {
+     	     	@include font-size($size-big);
+
+     }
+}
+
+
+
+.single {
+	
+	.warp-relative {
+		position: relative;
+    	overflow: hidden;
+    }
+
+    h1 {display: inline;}
+
+
+    .site-main .class-h1::after {
+	    content: '';
+	    display: inline-block;
+	    height: 44px;
+	    width: 1px;
+	    background-color: $border-color;;
+	    -webkit-transform: skew(-17deg, 0);
+	    -ms-transform: skew(-17deg, 0);
+	    transform: skew(-17deg, 0);
+	    -webkit-transform-origin: 100% 100%;
+	    -ms-transform-origin: 100% 100%;
+	    transform-origin: 100% 100%;
+	    margin-bottom: -9px;
+	    margin: auto 15px -9px 10px;
+    }
+    .entry-header {
+        z-index: 100;
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+    .entry-meta {
+	@include font-size($size-big);
+	color: $three-bw;    	
+    }
+    .col-4 {
+        min-height: 558px;
+    }
+
+   .featured-image {
+	    height: 100%;
+	    position: fixed;
+	    overflow: hidden;
+	    right: 0;
+
+
+        figure {
+          min-height: inherit;
+        }
+        .bg-container-image {
+            min-height:inherit;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+	        height: 100%;
+            
+            
+        }
+
+   		.bg-container-svg {
+   			min-height:inherit;
+   			height: 100%;
+    		background-image: inline-image("/svg/two.svg");
+    		
+ 		
+
+   		 }
+
+    }
+    
+    .featured-image::after, .featured-image::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        height: 100%;
+        z-index: 5;
+        width: 100%;
+        -webkit-transform: skew(-17deg,0);
+        -ms-transform: skew(-17deg,0);
+        transform: skew(-17deg,0);
+        -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        display: block;
+
+    }
+    .featured-image::after {
+        left: -100%;
+        background: $four-bw;
+    }
+    .featured-image::before {
+        left: -99%;
+        border-right: 1px solid $four-bw;
+    }
+    .skew-button {
+        position: absolute;
+        right: 50%;
+        bottom: 9%;
+        padding: 10px 20px;
+        background: $four-bw;
+        -webkit-transform: translate(60%,0);
+        -ms-transform: translate(60%,0);
+        transform: translate(60%,0);
+
+    }	
+	
+	
+	.format-gallery {
+		.featured-image {
+	    height: 100%;
+	    position: absolute;
+	    overflow: hidden;
+	    right: 0;
+	    top:0;
+	    }
+    	.entry-header {
+        width: 150%;
+	    }
+		
+	}
+    
+	.entry-social i {
+		@include font-size($size-big);
+	}
+
+
+}
+
+
+
+/*----------------------------------
+ *  Breakpoint
+ * ---------------------------------*/
+@include breakpoint($small) {
+    .hentry-porto {
+        
+        .format-standard.has-post-thumbnail p,
+        .format-quote p,
+        .format-image p,
+        .format-gallery p,
+        .format-video p,
+        .more {
+            display: none;
+     }
+     
+     	.format-standard.has-post-thumbnail .warp-absolute,
+        .warp-absolute {
+        	@include span(12 rtl );
+			height:auto;
+			min-height:none;
+			max-height:none;
+            top:0;
+            right: 0;
+            position: relative;
+            clear: both;
+     	}
+     	.format-standard .entry-content, .format-quote .entry-content {
+ 			height:auto;
+			min-height: 0;
+			padding: 2%;
+			    		
+     	}
+
+ 	}
+ 	
+ 	
+	.single {
+	    .entry-header {
+	        width: 100%;
+	    }		
+	    .featured-image {
+	    	min-height: 205px;
+	    	position: relative;
+	    }
+		.format-gallery {
+			.featured-image {
+		    position: relative;
+		    overflow: hidden;
+			}
+			.entry-header {
+	        width: 100%;
+		    }
+		}		
+	    .featured-image::after, .featured-image::before {
+		    	display: none;
+	    }
+	} 		
+}

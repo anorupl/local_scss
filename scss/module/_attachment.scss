@@ -1,0 +1,46 @@
+/*----------------------------------
+ *  attachment
+ * ---------------------------------*/
+#section-attachments	.class-h2 				{@extand h2}
+#section-attachments	.post-attachments 		{@extend .clear-list}
+#section-attachments	.post-attachments li 	{margin: 7px 0; padding-left: 45px;  background-size: contain; background-repeat: no-repeat;}
+#section-attachments	.attachment-info 		{@include font-size($size-small);}
+
+.post-attachment {
+	 background-size: contain;
+}
+.svg {
+
+.mime-applicationzip 															{background-image: url("#{$img-path}svg-mime/ZIP.svg"); }
+.mime-applicationrar 															{background-image: url("#{$img-path}svg-mime/RAR.svg");}
+.mime-applicationmsword 														{background-image: url("#{$img-path}svg-mime/DOC.svg"); }
+.mime-applicationvnd-openxmlformats-officedocument-wordprocessingml-document 	{background-image: url("#{$img-path}svg-mime/DOCX.svg");}
+.mime-applicationvnd-ms-excel 													{background-image: url("#{$img-path}svg-mime/xls.svg");}
+.mime-applicationvnd-openxmlformats-officedocument-spreadsheetml-sheet 			{background-image: url("#{$img-path}svg-mime/XLSX.svg");}
+.mime-applicationvnd-ms-powerpoint 												{background-image: url("#{$img-path}svg-mime/PPT.svg");}
+.mime-applicationvnd-openxmlformats-officedocument-presentationml-presentation 	{background-image: url("#{$img-path}svg-mime/PPTX.svg");}
+.mime-applicationvnd-oasis-opendocument-text 									{background-image: url("#{$img-path}svg-mime/ODT.svg");}
+.mime-applicationvnd-oasis-opendocument-spreadsheet 							{background-image: url("#{$img-path}svg-mime/ODS.svg");}
+.mime-applicationvnd-oasis-opendocument-presentation 							{background-image: url("#{$img-path}svg-mime/ODP.svg");}
+.mime-textplain 																{background-image: url("#{$img-path}svg-mime/TXT.svg");}
+.mime-applicationpdf 															{background-image: url("#{$img-path}svg-mime/PDF.svg");}
+
+}
+
+.no-svg {
+
+.mime-applicationzip 															{background-image: url("#{$img-path}svg-mime/ZIP.png"); }
+.mime-applicationrar 															{background-image: url("#{$img-path}png-mime/RAR.png");}
+.mime-applicationmsword 														{background-image: url("#{$img-path}png-mime/DOC.png"); }
+.mime-applicationvnd-openxmlformats-officedocument-wordprocessingml-document 	{background-image: url("#{$img-path}png-mime/DOCX.png");}
+.mime-applicationvnd-ms-excel 													{background-image: url("#{$img-path}png-mime/xls.png");}
+.mime-applicationvnd-openxmlformats-officedocument-spreadsheetml-sheet 			{background-image: url("#{$img-path}png-mime/XLSX.png");}
+.mime-applicationvnd-ms-powerpoint 												{background-image: url("#{$img-path}png-mime/PPT.png");}
+.mime-applicationvnd-openxmlformats-officedocument-presentationml-presentation 	{background-image: url("#{$img-path}png-mime/PPTX.png");}
+.mime-applicationvnd-oasis-opendocument-text 									{background-image: url("#{$img-path}png-mime/ODT.png");}
+.mime-applicationvnd-oasis-opendocument-spreadsheet 							{background-image: url("#{$img-path}png-mime/ODS.png");}
+.mime-applicationvnd-oasis-opendocument-presentation 							{background-image: url("#{$img-path}png-mime/ODP.png");}
+.mime-textplain 																{background-image: url("#{$img-path}png-mime/TXT.png");}
+.mime-applicationpdf 															{background-image: url("#{$img-path}png-mime/PDF.png");}
+
+}

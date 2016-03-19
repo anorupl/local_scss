@@ -1,0 +1,78 @@
+a {
+	text-decoration: none;
+	color: $two-color;
+	&:hover, &:active {color: $one-color; outline: 0;}
+
+	&:focus {
+	}
+	img {
+		border: 0;
+    	
+	}
+
+}
+.fff a {
+	color: $four-bw;
+	&:hover, &:active {color: $four-bw; outline: 0;}
+
+}
+
+
+a.button {
+position: relative;
+padding: 8px 20px;
+margin: 5px auto 20px auto;
+display: inline-block;
+
+text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 4px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 4px rgba(0, 0, 0, 0.5);
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 4px rgba(0, 0, 0, 0.5);
+
+	&.standart-color {
+
+
+
+		color: $four-bw;
+		background-color: $two-color;
+
+
+	}
+	&.color {
+    color:#fff;
+    background-color: $two-color;
+    background-image: -moz-linear-gradient($two-color, $one-color);
+    background-image: -webkit-gradient(linear, left top, left bottom,from($two-color), to($one-color));
+    background-image: -webkit-linear-gradient($two-color, $one-color);
+    background-image: -o-linear-gradient($two-color, $one-color);
+    background-image: -ms-linear-gradient($two-color, $one-color);
+    background-image: linear-gradient($two-color, $one-color);
+	}
+	&.small-radius {
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+	}
+}
+.button:hover {
+	&.standart-color {
+
+		color: $four-bw;
+		background-color: $one-color;
+
+
+	}
+	&.color {
+	color:#fff;
+	background-color: $one-color;
+	background-image: -moz-linear-gradient($one-color, $two-color);
+	background-image: -webkit-gradient(linear, left top, left bottom, from($one-color), to($two-color));
+	background-image: -webkit-linear-gradient($one-color, $two-color);
+	background-image: -o-linear-gradient($one-color, $two-color);
+	background-image: -ms-linear-gradient($one-color, $two-color);
+	background-image: linear-gradient($one-color, $two-color);
+
+	}
+}
+
+

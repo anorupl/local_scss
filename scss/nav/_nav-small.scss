@@ -1,0 +1,81 @@
+$small-background: $four-bw;
+
+// li
+$small-color-a: 				$two-color;
+$small-background-li: 			$four-bw;
+
+$small-color-ahover:			$two-color;
+$small-background-lihover: 		$four-bw;
+
+// li li
+$small-color-aa: 				$two-bw;
+$small-background-lili: 		$four-bw;
+
+$small-color-aahover: 			$two-color;
+$small-background-lilihover: 	$four-bw;
+
+$small-border: 					$border-color;
+
+
+
+.icon-button-small-menu 												{
+	float: none; margin: 2.08333% auto; display: none;
+	border: none;
+    background-color: transparent;
+    height: 42px;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 42px;	
+}
+.icon-button-small-menu.rtl	{
+    position: absolute;
+    z-index: 300;
+    right: 0;
+    top: 0;
+    margin: 2.08333%;
+}
+.icon-button-small-menu:before {
+	content: "\f039";	
+    display: inline-block;
+    font-size: 38px;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+    vertical-align: top;
+	line-height: 40px;
+	width: 40px;
+	color: $two-color;
+}
+@include breakpoint($small) {
+	
+	.warp.button-menu 					{border: 1px solid $border-color; background-color: $two-color; }
+	
+	.no-js {
+		.horizontal .menu ul 			{width: auto; position: relative; top: 0; left: 0; margin: 0;	opacity: 1;	z-index: 150; margin-bottom: 10px;}
+		.horizontal .menu ul:before		{display: none; }
+	}
+
+	.js {
+
+		.hidde 									{top:-9999px; position: absolute; height: 1px;}
+		.icon-button-small-menu 				{display: block;}
+		.icon-button-small-menu.full-width		{width: 100%; text-align: center;}
+
+		// smal menu
+		#site-header {
+			.small-menu.top .menu 				{margin-top:85px;}
+		}
+		.small-menu .menu 						{width: 100%; position: relative; z-index:9990;clear: both; background: $four-bw;}
+		.small-menu .menu ul 					{background: #F0F0F0;}
+		.small-menu .menu li 					{position:relative;}
+		.small-menu .menu li a 					{display: block; padding: 1.6rem; font-size:100%; line-height:1; color: $small-color-a; border-bottom: 1px solid $small-border;}
+
+		.small-menu .menu li li a 				{padding-left: 50px;}
+ 		//rozszerzenie ikony dodane recznie
+		.small-menu .menu li li.menu-item>a:before { content: "\f105"; margin: 0 10px; font-weight: bold; color: $two-color;}
+
+		.small-menu .menu li li.current-menu-item.menu-item-has-children ul.sub-menu,
+		.small-menu .menu ul li li.current-menu-parent ul.sub-menu  						{display: block;}
+	}
+}

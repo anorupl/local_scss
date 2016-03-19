@@ -1,0 +1,59 @@
+/* --------------------------------------------
+ * Color
+ --------------------------------------------*/
+
+$one-color      : #A3014C; //#00796B;
+$two-color      : #FC1041; //#009688
+$three-color    : #B2DFDB;
+$four-color     : #00BCD4;   // active menu
+
+$one-bw         : #212121;  // text
+$two-bw         : #727272;  // icon
+$three-bw       : #F0F0F0;
+$four-bw        : #FFFFFF;
+
+$border-color   : #D4D4D4;
+
+$wcag-herf      : #FFFE00;
+$wcag-bg        : #000;
+
+$fields-fff    : $four-bw      ;
+$fields-text    : $one-bw       ;
+$fields-color   : $two-color    ;
+$fields-bg      : $four-bw      ;
+$fields-border  : $three-bw     ;
+$fields-active  : $one-color    ;
+
+$outline        : 1px solid $one-color;
+
+
+/* --------------------------------------------
+ * Path
+ --------------------------------------------*/
+
+$img-path	: "img/";
+$font-path	: "fonts/";
+
+/* --------------------------------------------
+ * font
+ --------------------------------------------*/
+
+$font-base		: Verdana, Helvetica, sans-serif;
+$font-second	: 'Open Sans', sans-serif;
+$font-bold		: Oswald, sans-serif;
+
+$size-small	    : 1.2;
+$size-base      : 1.3;
+$size-medium	: 1.4;
+$size-big       : 2.3;
+
+
+/* --------------------------------------------
+ * Breakpoint
+ --------------------------------------------*/
+
+$small			: max-width 900px;
+$small-min		: max-width 501px;
+
+$medium	        : max-width 1223px;
+$large	        : min-width 1224px;

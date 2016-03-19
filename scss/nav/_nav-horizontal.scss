@@ -1,0 +1,116 @@
+/* menu poziome #base*/
+
+$font-size-li: 1.4;
+$font-size-lili: 1.4;
+
+/* simple */
+$hv-background: 				$four-bw;
+$hv-color-a: 					$two-color;
+$hv-color-ahover:				$two-color;
+$hv-background-lihover: 		$four-bw;
+
+/* over */
+$hv2-color-a: 					$four-bw;
+$hv2-color-ahover: 				$four-bw;
+
+/* all */
+$hv-color-aa: 					$two-color;
+$hv-color-aahover: 				$two-color;
+
+$hv-background-lili: 			$four-bw;
+$hv-background-lilihover: 		$four-bw;
+
+$hv-border: 					$border-color;
+
+
+
+
+/*
+ * All
+ * */
+.horizontal .menu 								{position: relative; }
+.horizontal .menu ul 							{position: absolute; left: -999em; display: block; }
+.horizontal .menu ul ul 						{left: -999em;}
+
+.horizontal .menu li a 							{display: block; position:relative; padding: 10px 25px;}
+.horizontal .menu li li a 						{padding: 10px 15px; color: $hv-color-aa;}
+
+.horizontal .menu li li > a:hover 				{color: $hv-color-aahover; background: $hv-background-lilihover; }
+.horizontal .menu li li li  > a:hover 			{color: $hv-color-aahover; background: $hv-background-lilihover;}
+
+.horizontal .menu li 							{position: relative; }
+.horizontal .menu li li 						{clear: both; padding: 0 10px 5px 10px; background: $hv-background-lili; border-bottom: 1px solid $hv-border;}
+
+.horizontal .menu > li 							{ @include font-size($font-size-li); position: relative; float: left;	 	}
+.horizontal .menu > li > li						{ @include font-size($font-size-lili); 		}
+.horizontal .menu > li > li > li				{ @include font-size($font-size-lili);		}
+
+.horizontal .menu li.current_page_item a,
+.horizontal .menu li.current-menu-item a		{font-weight: bold;}
+
+
+/* strzalki */
+.horizontal .menu > li.menu-item-has-children > a::after 	{ @extend [class^="icon-"]; content: "\f107"; display: inline; margin-left: 9px; font-weight: bold;}
+.horizontal .menu li li.menu-item-has-children > a::after 	{ @extend [class^="icon-"]; content: "\f105"; display: inline; color: $hv-color-aa; margin-left: 9px; font-weight: bold;}
+
+
+
+
+
+
+
+/*
+ * Ver. Simple
+ */
+
+.horizontal.simple .menu 						{float: inherit;}
+.horizontal.simple ul 							{background: $hv-background;}
+.horizontal.simple .menu li a 					{color: $hv-color-a;}
+.horizontal.simple .menu li > a:hover 			{color: $hv-color-ahover; background: $hv-background-lihover;}
+
+/* li - submenu*/
+.horizontal.simple .menu li:hover > ul,
+.horizontal.simple .menu li.focus > ul 								{display: block; left: 0;}
+
+/* li li - submenu*/
+.horizontal.simple .menu ul li:hover > ul,
+.horizontal.simple .menu ul li.focus > ul 						{display: block; left: 100%; top: 0;}
+/* strzalki */
+.horizontal.simple .menu > li.menu-item-has-children > a::after 	{color: $hv-color-a;}
+
+/*
+ * Ver. Over
+ */
+
+.horizontal.over .menu 							{float: right;}
+.horizontal.over .menu ul 						{border-top: 2px solid $two-color; margin-top: 10px;}
+
+.horizontal.over ul.menu > li 					{margin: auto 8px; padding-bottom: 10px;}
+.horizontal.over ul.menu > li > a               {color: $hv2-color-a; border-bottom: 1px solid rgba(255, 255, 255, 0.8);}
+.horizontal.over ul.menu > li > a:hover 		{color: $hv2-color-ahover; border-bottom: 1px solid rgba(255, 255, 255, 1);}
+
+/* Add font icon */
+.horizontal.over .menu > li > ul::before		{content: ''; position: absolute; bottom: 100%; left: 50%; margin-left: -8px; width: 0; height: 0; border-bottom: 8px solid $two-color; border-right: 8px solid transparent; border-left: 8px solid transparent;}
+
+/* li - submenu active*/
+.horizontal.over .menu > li:hover > ul,
+.horizontal.over .menu > li.focus > ul 			{left:50%; -webkit-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -o-transform: translate(-50%, 0); transform: translate(-50%, 0);}
+
+/* li li - submenu active*/
+.horizontal.over .menu ul li:hover > ul,
+.horizontal.over .menu ul li.focus > ul 		{left: 100%; top: -12px;}
+
+/* strzalki */
+.horizontal.over .menu > li.menu-item-has-children > a::after 	{color: $hv2-color-a;}
+
+
+
+
+
+
+
+
+
+
+
+
